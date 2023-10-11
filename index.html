@@ -3,29 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>MyPortfolioDEAL</title>
-  <!--************ try to delete : line 7-->
-  <base href="/"> 
+    <!--************ try to delete : line 7-->
+    <!-- <base href="/">  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
-  <!-- Bootstrap CDN (Content delivery network) -->
+    <!-- Bootstrap CDN (Content delivery network) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+  <!-- Popper (JS library) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ************ font  -->
 
-  <!-- ************ font  -->
 
-
-  <!-- Link the CSS File -->
+    <!-- Link the CSS File -->
   <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
 
-  <!-- Navbar https://getbootstrap.com/docs/5.0/components/navbar/
+
+
+<!-- Navbar Section -->
+      <!-- Navbar https://getbootstrap.com/docs/5.0/components/navbar/
       class chaining here. -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarScroll">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarScroll"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarScroll">
+
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Alexandra Case's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +44,10 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Action</a>
+          </li>
           
           <!-- Linkedin  -->
           <li class="nav-item">
@@ -47,45 +57,102 @@
               </a>
           </li>
          
-          <!-- ************ Prroject idk come back to this  -->
+          
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
+
+    
   </nav>
 
 
+
+
+<!-- Introduction Section -->
   <section class="container-fluid section bgimage" id="home">
+    <!-- Content here -->
     <div class="row">
-      <div class col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text>
-        <h2 class="'hero_title">Hi, my name is Lexi wyd? </h2> 
-        <p class="hero_desc"> I am a software engineer! hehehe making a portfolio for fun </p>
+      <!-- should take up full width which is 12 -->
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lexi_text">
+        <h2 class ="lexi_title">Hi, It is lexi</h2>
+        <p class="lexi_desc"> I am a software engineer and I wanted to make a portfolio. I need to fix the nav bar! </p>
       </div>
     </div>
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- About Section -->
+  <section class="container mt-4 pt-4 section" id="about">
+    <h1 class="text-center">About Me</h1>
+
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <img src="about.png" class="image_about" alt="">
+      </div>
+
+      <div class="col-lg-6">
+        <p>Hey there! I'm Alexandra Case, a passionate developer at IBM with a zest for technology and a love for learning.</p>
+        <div class="row mt-3">
+          <p>My main interests at the moment include Cloud Computing, Machine Learning/AI, and Web Development </p>
+
+
+          <!-- Bullets  -->
+          <!-- <div class="col-md-6">
+         
+            <ul>
+             
+              <li>Wake Surfing</li>
+              <li>Running</li>
+              <li>Reading self help books</li>
+              <li>Cooking!</li>
+            </ul>
+
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Snow Skiing</li>
+              <li>Coding</li>
+            </ul>
+          </div> -->
+        </div>
+        <div class="row mt-3">
+          <p> I also enjoy listening to music, being active, cooking, reading, and cats( I really like cats ) </p>
+        </div>
+        
+        <div class="row mt-3">
+          <p>Let's connect and exchange ideas! Whether it's discussing the latest tech trends, sharing delicious recipes, talking about thrill-seeking adventures, swapping motivational quotes, or even exchanging running tips,  I'm always up for a stimulating conversation. Here's to the exciting journey ahead!</p>
+        </div>
+      </div>
+      </div>
   </section>
 
 
 </body>
 
 
-<!-- Load javascript after loading the html content -->
+    <!-- Load javascript after loading the html content -->
 <script src ="script.js">  </script>
 
 

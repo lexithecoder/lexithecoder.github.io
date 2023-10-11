@@ -1,0 +1,44 @@
+/*spacing on all sections*/
+.section{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+.section:last-of-type{
+    padding-bottom:4rem;
+}
+
+/*Code background image*/
+.bgimage{
+    height:100vh;
+    background: url('code.png');
+    background-size:cover;
+    position:relative;
+    padding:0;
+    margin:0;
+
+}
+
+/*Text css above Code image*/
+.lexi_title{
+    margin-left: 5rem;
+    padding-top: 10rem;
+    font-size: 4.5rem;
+
+}
+
+.lexi_desc{
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+
+.lexi_text {
+
+    color: white;
+}
+
+
+/* On the rare chance I need to override box sizing use  */
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }

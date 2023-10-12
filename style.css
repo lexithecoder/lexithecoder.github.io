@@ -11,7 +11,7 @@
 /*Code background image*/
 .bgimage{
     height:100vh;
-    background: url('code.png');
+    background: url('images/code.png');
     background-size:cover;
     position:relative;
     padding:0;
